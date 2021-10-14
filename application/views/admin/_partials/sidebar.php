@@ -1,7 +1,7 @@
 <div class="col-md-3 left_col">
             <div class="left_col scroll-view">
                 <div class="navbar nav_title" style="border: 0;">
-                    <a href="index.html" class="site_title">  <span>Aplikasi ChatBot</span></a>
+                    <a href="index.html" class="site_title">  <span>E-BOOK</span></a>
                 </div>
 
                 <div class="clearfix"></div>
@@ -27,10 +27,7 @@
                         <h3>General</h3>
                         <ul class="nav side-menu">
                             <li><a href="<?=base_url('admin')?>"><i class="fa fa-home"></i> Home </a></li>
-                            <li><a href="<?=base_url('admin/Data_mahasiswa/')?>"><i class="fa fa-home"></i> Data Mahasiswa </a></li>
-                            <li><a href="<?=base_url('admin/ChatKategori')?>"><i class="fa fa-home"></i> Chat Kategori </a></li>
-                            <li><a href="<?=base_url('admin/Kriteria')?>"><i class="fa fa-home"></i> Kriteria</a></li>
-                            <li><a href="<?=base_url('admin/Alternatif')?>"><i class="fa fa-home"></i> Alternatif </a></li>
+                            <li><a href="<?=base_url('admin/Buku/')?>"><i class="fa fa-home"></i> Data Buku</a></li>
                         </ul>
                     </div>
                 </div>
