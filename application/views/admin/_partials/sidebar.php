@@ -1,40 +1,73 @@
-<div class="col-md-3 left_col">
-            <div class="left_col scroll-view">
-                <div class="navbar nav_title" style="border: 0;">
-                    <a href="index.html" class="site_title">  <span>E-BOOK</span></a>
-                </div>
+<!-- Main Sidebar Container -->
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+    
+    <!-- Brand Logo -->
+    <a href="../../index3.html" class="brand-link">
+      <img src="<?= base_url()?>assets/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">AlumniITDA</span>
+    </a>
 
-                <div class="clearfix"></div>
+    <!-- Sidebar -->
+    <div class="sidebar">
 
-                <!-- menu profile quick info -->
-                <div class="profile clearfix">
-                    <div class="profile_pic">
-                        <img src="<?=base_url()?>assets/images/img.jpg" alt="..." class="img-circle profile_img">
-                    </div>
-                    <div class="profile_info">
-                        <span>Welcome,</span>
-                        <h2>Admin</h2>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-                <!-- /menu profile quick info -->
-
-                <br/>
-
-                <!-- sidebar menu -->
-                <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
-                    <div class="menu_section">
-                        <h3>General</h3>
-                        <ul class="nav side-menu">
-                            <li><a href="<?=base_url('admin')?>"><i class="fa fa-home"></i> Home </a></li>
-                            <li><a href="<?=base_url('admin/Buku/')?>"><i class="fa fa-home"></i> Data Buku</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- /sidebar menu -->
-
-                <!-- /menu footer buttons -->
-                
-                <!-- /menu footer buttons -->
-            </div>
+      <!-- Sidebar user (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="<?= base_url()?>assets/images/admin.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
+        <div class="info">
+          <a href="#" class="d-block">Admin</a>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+              
+                <!-- Menu Dashboard -->
+                <li class="nav-item">
+                    <a href="<?= base_url('admin/Dashboard')?>" class="nav-link">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+
+                <!-- Menu Data Pertanyaan -->
+                <li class="nav-item">
+                    <a href="<?= base_url('admin/Pertanyaan')?>" class="nav-link">
+                        <i class="nav-icon fa fa-comments"></i>
+                        <p>Data Pertanyaan</p>
+                    </a>
+                </li>
+                  <!-- Menu Data Pertanyaan -->
+                  <li class="nav-item">
+                    <a href="<?= base_url('admin/Pertanyaan')?>" class="nav-link">
+                        <i class="nav-icon fa fa-comments"></i>
+                        <p>Data Kriteria</p>
+                    </a>
+                </li>
+
+                  <!-- Menu Data Pertanyaan -->
+                  <li class="nav-item">
+                    <a href="<?= base_url('admin/Pertanyaan')?>" class="nav-link">
+                        <i class="nav-icon fa fa-comments"></i>
+                        <p>Data Alternatif</p>
+                    </a>
+                </li>
+
+                <!-- Menu Data Pertanyaan -->
+                <li class="nav-item">
+                    <a href="<?= base_url('admin/Pertanyaan')?>" class="nav-link">
+                        <i class="nav-icon fa fa-comments"></i>
+                        <p>Data Alternatif Kriteria</p>
+                    </a>
+                </li>
+
+                
+            
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>

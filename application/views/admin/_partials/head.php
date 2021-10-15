@@ -1,18 +1,22 @@
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <!-- Meta, title, CSS, favicons, etc. -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alumni | Admin</title>
 
-    <title>Gentelella Alela! | </title>
+  <!-- Google Font: Source Sans Pro
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback"> -->
 
-    <link href="<?=base_url()?>assets/vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap -->
-    <link href="<?=base_url()?>assets/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link href="<?=base_url()?>assets/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <!-- NProgress -->
-    <link href="<?=base_url()?>assets/vendors/nprogress/nprogress.css" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="<?= base_url()?>assets/dist/css/adminlte.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="<?= base_url()?>assets/plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="<?= base_url()?>assets/dist/css/adminlte.min.css">
 
-    <!-- Custom Theme Style -->
-    <link href="<?=base_url()?>assets/build/css/custom.min.css" rel="stylesheet">
+  <!-- Menu Hasil Pertanyaan -->
+  <!-- DataTables -->
+  <link rel="stylesheet" href="<?= base_url()?>assets/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="<?= base_url()?>assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="<?= base_url()?>assets/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+  <link rel="stylesheet" href="<?= base_url()?>assets/plugins/datepicker/css/bootstrap-datepicker.min.css">
+  <!-- <script src="<?= base_url()?>assets/plugins/datepicker/js/bootstrap-datepicker.min"></script> -->
+  <!-- /Menu Kategori -->

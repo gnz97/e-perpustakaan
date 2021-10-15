@@ -1,94 +1,81 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <?php $this->load->view('admin/_partials/head.php')?>
-</head>
+    <head>
+        <?php $this ->load->view('admin/_partials/head.php');?>
+    </head>
 
-<body class="nav-md">
-    <div class="container body">
-        <div class="main_container">
-            <?php $this->load->view('admin/_partials/sidebar.php')?>
-            <!-- top navigation -->
-            <?php $this->load->view('admin/_partials/nav.php')?>
-            <!-- /top navigation -->
+    <body class="hold-transition sidebar-mini">
+        <div class="wrapper">
 
-            <!-- page content -->
-            <div class="right_col" role="main">
-                <div class="">
-                    <div class="page-title">
-                        <div class="title_left">
-                            <!-- <h3>Data Mahasiswa</h3> -->
+        <!-- Top Navar -->
+        <?php $this->load->view('admin/_partials/navbar.php');?>
+        <!-- /Top Navbar -->
+
+        <!-- Left Sidebar -->
+        <?php $this->load->view('admin/_partials/sidebar.php');?>
+        <!-- /Left Sidebar -->
+
+        <!-- Main Content -->
+        <div class="content-wrapper">
+
+        <!-- Breadcrumb -->
+        <?php $this->load->view('admin/_partials/breadcrumb.php');?>
+        <!-- /Breadcrumb -->
+
+            <section class="content">
+                <div class="card">
+                    <!-- Navbar Content -->
+                    <div class="card-header">
+                        <h3 class="card-title">Data Petugas</h3>
+                        <div class="card-tools">
+                            <a href="<?= base_url('admin/Petugas/viewAddPetugas')?>">
+                                <button type="button" class="btn btn-block btn-primary">  <i class="fa fa-user-plus"></i>
+                                    Tambah Data
+                                </button>
+                            </a>
                         </div>
                     </div>
-                    <div class="clearfix"></div>
-                    <div class="row">
-                        <div class="col-md-12 col-sm-12  ">
-                            <div class="x_panel">
-                                <div class="x_title">
-                                    <h2>Data Buku</h2>
-                                    <div class="float-right"><a href="<?=base_url('admin/Kriteria/viewAddKriteria')?>" class="btn btn-primary"> Tambah Buku</a></div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="x_content">
-                                    <div class="">
-                                        <table class="table table-striped jambo_table bulk_action" id="mahasiswaTable">
-                                            <thead>
-                                            
-                                                <tr class="headings">
-                                                    <th class="column-title" style="display: table-cell;" width="5%">#</th>
-                                                    <th class="column-title" style="display: table-cell;" width="7%">Kode</th>
-                                                    <th class="column-title" style="display: table-cell;" width="70%">Nama Buku</th>
-                                                    <th class="column-title" style="display: table-cell;" width="10%">Kategori</th>
-                                                    <!-- <th class="column-title" style="display: table-cell;" width="70%">Kosentrasi</th> -->
-                                                    <th class="column-title   text-center" style="display: table-cell;"><span class="nobr">Action</span></th> 
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                           
-                                           
-                                                <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    
-                                                    <td class="d-flex justify-content-center">
-                                                        <a href="<?=base_url('admin/chatKategori/viewEditChatKategori/')?>" class="btn btn-primary"> Edit</a>
-                                                        <button class="btn btn-danger" id="btn-delete" value="">Delete</button>
-                                                    </td>
-                                                </tr>
-                                         
-                                              
-                                                
-                                               
-                                            </tbody>
-                                        </table>
-                                    </div> 
-                                </div>
-                            </div>
-                        </div>
+                    <!-- /Navbar Content -->
+                    <!-- Page Content -->
+                    <div class="card-body">
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th width="5%">#</th>
+                                    <th>Nama Petugas</th>
+                                    <th>Jurusan</th>
+                                    <th>Angkatan</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <a href="<?=base_url('admin/Petugas/viewEditPetugas')?>">
+                                            <button class="btn btn-warning btn-sm" id="btn-edit"><i class="fa fa-pencil"></i>Edit</button>
+                                        </a>
+                                        <button class="btn btn-danger btn-sm" id="btn-delete">Hapus</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-            </div>
-            <!-- /page content -->
-
-            <!-- footer content -->
-            <?php $this->load->view('admin/_partials/footer.php')?>
-            <!-- /footer content -->
+            </section>
         </div>
+        <!-- /Main Content -->
+
+        <!-- Footer -->
+        <?php $this->load->view('admin/_partials/footer.php');?>
+        <!-- /Footer -->
     </div>
 
-<?php $this->load->view('admin/_partials/js.php')?>
-
-<script>
-$(document).ready(function(){
-        $('#mahasiswaTable').DataTable();
-
-
-  
-});
-    
-    </script>
+    <!-- JS -->
+    <?php $this->load->view('admin/_partials/js.php');?>
+    <!-- /Js -->
 </body>
 </html>
