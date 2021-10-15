@@ -26,11 +26,11 @@
                 <div class="card">
                     <!-- Navbar Content -->
                     <div class="card-header">
-                        <h3 class="card-title">Data Petugas</h3>
+                        <h3 class="card-title">Data Buku</h3>
                         <div class="card-tools">
                             <a href="<?= base_url('admin/Petugas/viewAddPetugas')?>">
                                 <button type="button" class="btn btn-block btn-primary">  <i class="fa fa-user-plus"></i>
-                                    Tambah Data
+                                    Tambah Buku
                                 </button>
                             </a>
                         </div>
@@ -42,9 +42,9 @@
                             <thead>
                                 <tr>
                                     <th width="5%">#</th>
-                                    <th>Nama Petugas</th>
-                                    <th>Jurusan</th>
-                                    <th>Angkatan</th>
+                                    <th>Kode Buku</th>
+                                    <th>Nama Buku</th>
+                                    <th>Kategori</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>

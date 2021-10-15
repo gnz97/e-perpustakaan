@@ -21,6 +21,8 @@
         <!-- Breadcrumb -->
         <?php $this->load->view('admin/_partials/breadcrumb.php');?>
         <!-- /Breadcrumb -->
+
+            
             <section class="content">
                 <div class="container-fluid">
                     <div class="row">
@@ -29,7 +31,7 @@
                         <!-- jquery validation -->
                         <div class="card card-primary">
                             <div class="card-header">
-                                <h3 class="card-title">Edit Petugas</h3>
+                                <h3 class="card-title">Edit Buku</h3>
                             </div>
                         <!-- /.card-header -->
                         <!-- form start -->
@@ -37,24 +39,16 @@
                                 <div class="card-body">
                                    
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">Nama</label>
+                                        <label for="exampleInputEmail1">Kode Buku</label>
                                         <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Masukan Nama">
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">Jurusan</label>
+                                        <label for="exampleInputEmail1">Nama Buku</label>
                                         <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Masukan Jurusan">
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">Username</label>
+                                        <label for="exampleInputEmail1">Kategori</label>
                                         <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Masukan Username">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">Password</label>
-                                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Masukan Password">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">Alamat</label>
-                                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Masukan Alamat">
                                     </div>
                                 </div>
                                 <!-- /.card-body -->
